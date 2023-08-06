@@ -23,14 +23,14 @@ function createMarkup (arr) {
 
 container.insertAdjacentHTML('beforeend', createMarkup(galleryItems));
 container.addEventListener('click', handlerGalleryClick);
-    
+
 function handlerGalleryClick(evt) {
     evt.preventDefault();
     if(!evt.target.classList.contains('gallery__image')) {
         return;
     }
         // console.log(evt.target);
-        const picture = evt.target.dataset.sourse;
+        const picture = evt.target.dataset.source;
         const instance = basicLightbox.create (
         `<div class="modal"><img src="${picture}" alt="" ></div>`
     )

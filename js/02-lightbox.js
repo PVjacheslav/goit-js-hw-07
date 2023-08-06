@@ -24,6 +24,6 @@ container.insertAdjacentHTML('beforeend', createMarkup(galleryItems));
 console.log(SimpleLightbox)
 
 let lightbox = new SimpleLightbox('.gallery a', { 
-    captionData: "alt",
+    captionsData: "alt",
     capttionDelay: 250,
 });
